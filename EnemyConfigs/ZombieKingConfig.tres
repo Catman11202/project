@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EnemyConfig" load_steps=3 format=3 uid="uid://clejilqvsctbo"]
+
+[ext_resource type="Script" uid="uid://bgywjqgl2omtm" path="res://EnemyConfigs/EnemyConfig.gd" id="1_hhov6"]
+[ext_resource type="Texture2D" uid="uid://b8jfetquudte4" path="res://Sprites/zombieking.png" id="2_cowia"]
+
+[resource]
+script = ExtResource("1_hhov6")
+enemy_name = "Zombie King"
+max_health = 500
+movement_speed = 1.5
+attack_damage = 40
+attack_cooldown = 2.0
+sprite_atlas = ExtResource("2_cowia")
+detection_range = 200.0
+chase_range = 500.0
+aggression_level = 1.0
+experience_given = 200
+metadata/_custom_type_script = "uid://bgywjqgl2omtm"

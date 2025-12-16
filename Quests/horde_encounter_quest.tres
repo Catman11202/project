@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=11 format=3 uid="uid://c5bnto0abn434"]
+
+[ext_resource type="Script" uid="uid://drb3e5ug2sl4a" path="res://Quests/QuestObjectiveData.gd" id="1_4c0gu"]
+[ext_resource type="Script" uid="uid://crs53fo5oqxbd" path="res://Quests/QuestRewardData.gd" id="2_2hhgg"]
+[ext_resource type="Script" uid="uid://4g0ul0l00ddy" path="res://Quests/QuestData.gd" id="3_w48kf"]
+
+[sub_resource type="Resource" id="Resource_4c0gu"]
+script = ExtResource("1_4c0gu")
+type = 1
+description = "Find the main zombie's gun."
+target_id = "Gun_Item"
+metadata/_custom_type_script = "uid://drb3e5ug2sl4a"
+
+[sub_resource type="Resource" id="Resource_2hhgg"]
+script = ExtResource("1_4c0gu")
+type = 1
+description = "Find a matching magazine."
+target_id = "gun_magazine"
+metadata/_custom_type_script = "uid://drb3e5ug2sl4a"
+
+[sub_resource type="Resource" id="Resource_w48kf"]
+script = ExtResource("1_4c0gu")
+description = "Defeat the main zombie."
+target_id = "purple_zombie_type"
+metadata/_custom_type_script = "uid://drb3e5ug2sl4a"
+
+[sub_resource type="Resource" id="Resource_p7dmx"]
+script = ExtResource("1_4c0gu")
+description = "Clear the remaining horde."
+target_id = "regular_zombie_type"
+metadata/_custom_type_script = "uid://drb3e5ug2sl4a"
+
+[sub_resource type="Resource" id="Resource_hosly"]
+script = ExtResource("2_2hhgg")
+target_id = "gun_item"
+amount = 1
+metadata/_custom_type_script = "uid://crs53fo5oqxbd"
+
+[sub_resource type="Resource" id="Resource_83sl1"]
+script = ExtResource("2_2hhgg")
+target_id = "gun_magazine"
+amount = 2
+metadata/_custom_type_script = "uid://crs53fo5oqxbd"
+
+[sub_resource type="Resource" id="Resource_8ms7m"]
+script = ExtResource("2_2hhgg")
+type = 4
+target_id = "best_friend_zombie_quest"
+amount = 1
+metadata/_custom_type_script = "uid://crs53fo5oqxbd"
+
+[resource]
+script = ExtResource("3_w48kf")
+id = "horde_encounter_quest"
+quest_name = "Horde Encounter"
+description = "Find a weapon and clear the zombie horde to escape."
+objectives = Array[ExtResource("1_4c0gu")]([SubResource("Resource_4c0gu"), SubResource("Resource_2hhgg"), SubResource("Resource_w48kf"), SubResource("Resource_p7dmx")])
+rewards = Array[ExtResource("2_2hhgg")]([SubResource("Resource_hosly"), SubResource("Resource_83sl1"), SubResource("Resource_8ms7m")])
+metadata/_custom_type_script = "uid://4g0ul0l00ddy"

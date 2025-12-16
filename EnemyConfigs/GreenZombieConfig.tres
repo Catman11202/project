@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyConfig" load_steps=3 format=3 uid="uid://wc44cfauua3i"]
+
+[ext_resource type="Script" uid="uid://bgywjqgl2omtm" path="res://EnemyConfigs/EnemyConfig.gd" id="1_hakaa"]
+[ext_resource type="Texture2D" uid="uid://cva6160ck6s6n" path="res://Sprites/zombie.png" id="2_w61oh"]
+
+[resource]
+script = ExtResource("1_hakaa")
+enemy_name = "Green Zombie"
+max_health = 50
+movement_speed = 2.5
+attack_damage = 5
+sprite_atlas = ExtResource("2_w61oh")
+detection_range = 80.0
+chase_range = 150.0
+aggression_level = 0.7
+experience_given = 5
+metadata/_custom_type_script = "uid://bgywjqgl2omtm"

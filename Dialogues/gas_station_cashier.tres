@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="DialogueGraph" load_steps=11 format=3 uid="uid://ck6n4u62wlumr"]
+
+[ext_resource type="Script" uid="uid://b08o8tlastwa3" path="res://Scripts/DialogueGraph.gd" id="1_nr6o2"]
+[ext_resource type="Script" uid="uid://cdo03rsmaa33p" path="res://Scripts/dialogue_line_node.gd" id="1_tr0q8"]
+[ext_resource type="Script" uid="uid://bumwd8f0mg5eu" path="res://Scripts/DialogueChoice.gd" id="2_6m01d"]
+[ext_resource type="Script" uid="uid://d17unfub1clfi" path="res://Scripts/DialogueChoiceNode.gd" id="3_owdlg"]
+
+[sub_resource type="Resource" id="Resource_uh0hf"]
+script = ExtResource("1_tr0q8")
+next_node_id = "cashier_choice"
+id = "cashier_greeting"
+text = "Hey! Wh-what do you want?! Stay back!"
+metadata/_custom_type_script = "uid://cdo03rsmaa33p"
+
+[sub_resource type="Resource" id="Resource_8g868"]
+script = ExtResource("2_6m01d")
+choice_text = "Talk to him to calm him down and befriend him"
+next_node_id = "befriend_path"
+event_signal_name = "cashier_befriended"
+metadata/_custom_type_script = "uid://bumwd8f0mg5eu"
+
+[sub_resource type="Resource" id="Resource_4e5fg"]
+script = ExtResource("2_6m01d")
+choice_text = "Take out your gun and shoot him"
+next_node_id = "shoot_path"
+condition_script = "res://conditions/has_weapon_condition.gd"
+event_signal_name = "cashier_shot"
+metadata/_custom_type_script = "uid://bumwd8f0mg5eu"
+
+[sub_resource type="Resource" id="Resource_afkou"]
+script = ExtResource("3_owdlg")
+choices = Array[ExtResource("2_6m01d")]([SubResource("Resource_8g868"), SubResource("Resource_4e5fg")])
+id = "cashier_choice"
+text = "The cashier nervously aims his shotgun. What do you do?"
+metadata/_custom_type_script = "uid://d17unfub1clfi"
+
+[sub_resource type="Resource" id="Resource_y8xfo"]
+script = ExtResource("1_tr0q8")
+next_node_id = "end_befriend"
+id = "befriend_path"
+text = "You manage to calm the cashier down. He cautiously lowers his weapon."
+metadata/_custom_type_script = "uid://cdo03rsmaa33p"
+
+[sub_resource type="Resource" id="Resource_vn6k7"]
+script = ExtResource("1_tr0q8")
+next_node_id = "start_combat"
+id = "shoot_path"
+text = "You draw your weapon. The cashier screams and fires!"
+metadata/_custom_type_script = "uid://cdo03rsmaa33p"
+
+[resource]
+script = ExtResource("1_nr6o2")
+nodes = Array[Resource]([SubResource("Resource_uh0hf"), SubResource("Resource_afkou"), SubResource("Resource_y8xfo"), SubResource("Resource_vn6k7")])
+start_node_id = "cashier_greeting"
+metadata/_custom_type_script = "uid://b08o8tlastwa3"

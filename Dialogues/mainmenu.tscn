@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://0std86d2j5in"]
+
+[ext_resource type="Texture2D" uid="uid://c75ndfddbeyvy" path="res://Sprites/stop_sign.png" id="1_2pn8g"]
+[ext_resource type="Texture2D" uid="uid://8bxajg8cn4vf" path="res://Sprites/play_button.png" id="1_g2me5"]
+[ext_resource type="Texture2D" uid="uid://cuyocjqgibk5q" path="res://Sprites/Screenshot 2025-11-15 132900.png" id="2_2pn8g"]
+[ext_resource type="Script" uid="uid://cwtqrrgp1pvl5" path="res://Dialogues/exit.gd" id="2_g3uyg"]
+[ext_resource type="Script" uid="uid://8ugp00ss7ydm" path="res://Dialogues/play.gd" id="4_f26eg"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+z_index = 1
+offset_left = -1.9999356
+offset_top = -3.9999752
+offset_right = 24.000065
+offset_bottom = 22.000025
+scale = Vector2(7, 7)
+texture_normal = ExtResource("1_2pn8g")
+script = ExtResource("2_g3uyg")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 1913.0
+offset_bottom = 1073.0
+texture = ExtResource("2_2pn8g")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TitleScreenUI" type="CenterContainer" parent="."]
+offset_left = 664.0
+offset_top = 440.0
+offset_right = 2712.0
+offset_bottom = 2488.0
+scale = Vector2(0.3, 0.3)
+mouse_filter = 2
+
+[node name="TextureButton" type="TextureButton" parent="TitleScreenUI"]
+layout_mode = 2
+texture_normal = ExtResource("1_g2me5")
+script = ExtResource("4_f26eg")
+
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="_on_pressed"]
+[connection signal="pressed" from="TitleScreenUI/TextureButton" to="TextureButton2" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/TextureButton" to="TitleScreenUI/TextureButton" method="_on_pressed"]

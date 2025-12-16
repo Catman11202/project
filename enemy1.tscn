@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://besfp02kvhvx7"]
+
+[ext_resource type="Texture2D" uid="uid://d2nchx61sj74g" path="res://Sprites/Walking_Enemy.png" id="1_45pq5"]
+
+[node name="Enemy1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("1_45pq5")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(736, 256, 512, 1472)
