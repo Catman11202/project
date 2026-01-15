@@ -1,0 +1,15 @@
+AnimationPlayer
+Label      - Matches the "text" keyword.
+TextEdit
+CollisionShape2D
+Area2D
+TileMap
+Node
+ColorRect
+CanvasLayer
+Sprite2D
+Timer
+CharacterBody2D
+Node2D
+TextureButton
+Camera2D

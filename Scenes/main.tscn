@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://3ftv40oqomli"]
+
+[ext_resource type="Texture2D" uid="uid://cuyocjqgibk5q" path="res://Sprites/Screenshot 2025-11-15 132900.png" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://8bxajg8cn4vf" path="res://Sprites/play_button.png" id="2_jjvhh"]
+[ext_resource type="Script" uid="uid://blrc0hn7kp4rr" path="res://Scripts/play.gd" id="3_kry3j"]
+[ext_resource type="Texture2D" uid="uid://c75ndfddbeyvy" path="res://Sprites/stop_sign.png" id="4_21xkr"]
+[ext_resource type="Script" uid="uid://ccv4vxjowbx7c" path="res://Scripts/exit.gd" id="5_kry3j"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -294.0
+offset_top = -237.0
+offset_right = 346.0
+offset_bottom = 123.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jjgbg")
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.00006
+offset_top = -73.00003
+offset_right = 1906.0
+offset_bottom = 1975.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/CenterContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_jjvhh")
+stretch_mode = 3
+script = ExtResource("3_kry3j")
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_21xkr")
+stretch_mode = 0
+script = ExtResource("5_kry3j")
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/TextureButton" to="CanvasLayer/CenterContainer/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="CanvasLayer/TextureButton" method="_on_pressed"]

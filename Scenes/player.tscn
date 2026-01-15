@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://i508sny5khof"]
+
+[ext_resource type="Script" uid="uid://d3ts7dv6mwt4p" path="res://Scripts/player_basic.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://blin75qw0tpgt" path="res://Sprites/walking_janitor.png" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(9, 28)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
+radius = 32.0
+
+[sub_resource type="Animation" id="Animation_6t5aa"]
+resource_name = "Idle"
+
+[sub_resource type="Animation" id="Animation_cvnsp"]
+resource_name = "Walk"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vgqql"]
+_data = {
+&"Idle": SubResource("Animation_6t5aa"),
+&"Walk": SubResource("Animation_cvnsp")
+}
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource("1_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("1_v0iea")
+region_enabled = true
+region_rect = Rect2(768, 320, 480, 1408)
+
+[node name="CatchArea" type="Area2D" parent="." groups=["catch_area"]]
+collision_layer = 2
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CatchArea"]
+shape = SubResource("CircleShape2D_cvnsp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(7, 7)
+
+[node name="HeldItemAnchor" type="Node2D" parent="."]
+position = Vector2(6, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vgqql")
+}

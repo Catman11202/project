@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceclcogcs66n1"]
+
+[ext_resource type="Script" uid="uid://dkyl8fxv6xio6" path="res://Scripts/paper_wad.gd" id="1_bpboh"]
+[ext_resource type="Texture2D" uid="uid://ctksl7cwk8skh" path="res://Sprites/paper.png" id="2_8enib"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bpboh"]
+radius = 5.0
+
+[node name="PaperWad" type="Area2D"]
+collision_layer = 8
+collision_mask = 6
+script = ExtResource("1_bpboh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_8enib")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bpboh")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1awpgfqit4if"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k4ykq"]
+font_size = 150
+
+[node name="CutsceneEnd" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_top = 350.0
+offset_right = 1693.0
+offset_bottom = 555.0
+text = "SOON TO BE CUTSCENE"
+label_settings = SubResource("LabelSettings_k4ykq")
