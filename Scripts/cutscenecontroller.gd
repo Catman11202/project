@@ -8,8 +8,7 @@ var walk_speed := 120.0
 
 func _ready():
 	# disable player control
-	if player.has_method("set_process_input"):
-		player.set_process_input(false)
+	player.can_move = false
 
 	# fade in from black
 	fade.modulate.a = 1.0

@@ -12,6 +12,7 @@ var held_paper: Area2D = null
 var overlapping_paper: Area2D = null
 var enemy_hits := 0
 var hits_required := 5
+var can_move: bool = true
 
 func _trigger_next_cutscene():
 	get_tree().change_scene_to_file("res://Scenes/Cutscene_End.tscn")
@@ -21,17 +22,18 @@ func _ready():
 	catch_area.area_exited.connect(_on_paper_exited)
 
 func _physics_process(delta):
-	if not is_on_floor():
+	if not is_on_floor() and can_move:
 		velocity.y += gravity * delta
 
-	var direction = Input.get_axis("left", "right")
-	velocity.x = direction * speed
+	if can_move:
+		var direction = Input.get_axis("left", "right")
+		velocity.x = direction * speed
 
 	# Jump
-	if Input.is_action_just_pressed("up") and is_on_floor():
+	if Input.is_action_just_pressed("up") and is_on_floor() and can_move:
 		velocity.y = jump_force
-
-	move_and_slide()
+	if can_move:
+		move_and_slide()
 
 	#_update_animation(direction)
 

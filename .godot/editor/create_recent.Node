@@ -1,10 +1,9 @@
+Node
+TileMap
 AnimationPlayer
-Label      - Matches the "text" keyword.
 TextEdit
 CollisionShape2D
 Area2D
-TileMap
-Node
 ColorRect
 CanvasLayer
 Sprite2D
