@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var jump_force := -350.0
 @export var gravity := 900.0
 
+var can_move: bool = true
+
 @onready var catch_area: Area2D = $CatchArea
 @onready var held_anchor: Node2D = $HeldItemAnchor
 #@onready var anim = $Sprite2D
@@ -12,10 +14,9 @@ var held_paper: Area2D = null
 var overlapping_paper: Area2D = null
 var enemy_hits := 0
 var hits_required := 5
-var can_move: bool = true
 
 func _trigger_next_cutscene():
-	get_tree().change_scene_to_file("res://Scenes/Cutscene_End.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Cutscene_2.tscn")
 
 func _ready():
 	catch_area.area_entered.connect(_on_paper_entered)
@@ -91,12 +92,12 @@ func register_enemy_hit():
 	if enemy_hits >= hits_required:
 		_trigger_next_cutscene()
 
-'''
+
 func _update_animation(direction):
 	# Handle flipping
 	if direction != 0:
 		$AnimatedSprite2D.flip_h = direction < 0
-
+'''
 	# Air animations
 	if not is_on_floor():
 		if velocity.y < 0:

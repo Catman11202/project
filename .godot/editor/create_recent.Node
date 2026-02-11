@@ -1,3 +1,7 @@
+Sprite2D
+CanvasLayer
+Label
+Panel
 Node
 TileMap
 AnimationPlayer
@@ -5,10 +9,6 @@ TextEdit
 CollisionShape2D
 Area2D
 ColorRect
-CanvasLayer
-Sprite2D
 Timer
 CharacterBody2D
 Node2D
-TextureButton
-Camera2D

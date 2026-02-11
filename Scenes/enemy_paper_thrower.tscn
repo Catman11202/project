@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://xgd7xetk8wj8"]
+[gd_scene format=3 uid="uid://xgd7xetk8wj8"]
 
 [ext_resource type="Script" uid="uid://cqmx6dpnvrfru" path="res://Scripts/enemy_paper_thrower.gd" id="1_7jtrc"]
 [ext_resource type="Texture2D" uid="uid://d2nchx61sj74g" path="res://Sprites/Walking_Enemy.png" id="2_h45vj"]
@@ -7,24 +7,24 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h45vj"]
 size = Vector2(11, 37)
 
-[node name="EnemyPaperThrower" type="CharacterBody2D" groups=["enemy"]]
+[node name="EnemyPaperThrower" type="CharacterBody2D" unique_id=480906577 groups=["enemy"]]
 collision_layer = 4
 collision_mask = 9
 script = ExtResource("1_7jtrc")
 paper_scene = ExtResource("2_ivq5u")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=864551270]
 scale = Vector2(0.025, 0.025)
 texture = ExtResource("2_h45vj")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(736, 256, 512, 1472)
 
-[node name="ThrowPoint" type="Marker2D" parent="."]
+[node name="ThrowPoint" type="Marker2D" parent="." unique_id=1125260158]
 position = Vector2(-11, 5)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=215786420]
 position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_h45vj")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=2118007161]

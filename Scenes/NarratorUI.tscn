@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dw3lxbunbvad7"]
+
+[ext_resource type="Script" uid="uid://bbvooa4i6lmkp" path="res://Scripts/NarratorUI.gd" id="1_qfy27"]
+
+[node name="Narrator" type="CanvasLayer" unique_id=2106068314]
+script = ExtResource("1_qfy27")
+
+[node name="Panel" type="Panel" parent="." unique_id=1338366550]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=2086075711]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,28 +1,31 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770240518
+::res://::1770828261
 export_presets.cfg::TextFile::-1::1770234553::0::1::::<><><>0<>0<><>::
 ::res://dialogue/::1766328263
-::res://Levels/::1770236637
+::res://Levels/::1770257743
 level_01_janitors_escape.tscn::PackedScene::7759939049898402579::1767302930::0::1::::<><><>0<>0<><>::uid://bhgyh5j37tv8o::::res://Sprites/tiles_interior.png<>uid://dt2frlgvrsd2c::::res://Sprites/Invisible_Blocks.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://xgd7xetk8wj8::::res://Scenes/enemy_paper_thrower.tscn
-level_02_gf_house.tscn::PackedScene::853252933919403354::1770236637::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn
-::res://Scenes/::1769961062
+level_02_gf_house.tscn::PackedScene::853252933919403354::1770257743::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn
+::res://Scenes/::1770305346
 Cutscene_2.tscn::PackedScene::6599114186327040737::1769961062::0::1::::<><><>0<>0<><>::uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://gjs13c3116h2::::res://Scripts/cutscenecontroller2.gd<>uid://bx6mgb5u723gx::::res://Sprites/New Piskel.png
-Cutscene_FirehouseIntro.tscn::PackedScene::3008921738136178335::1769795008::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://c0pkaetwpy8wl::::res://Scripts/cutscenecontroller.gd<>uid://bftda3tks5ujq::::res://Sprites/Tileset.png
-enemy_paper_thrower.tscn::PackedScene::1626970181676589747::1767368640::0::1::::<><><>0<>0<><>::uid://cqmx6dpnvrfru::::res://Scripts/enemy_paper_thrower.gd<>uid://d2nchx61sj74g::::res://Sprites/Walking_Enemy.png<>uid://ceclcogcs66n1::::res://Scenes/paper_wad.tscn
+Cutscene_FirehouseIntro.tscn::PackedScene::3008921738136178335::1770303677::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://c0pkaetwpy8wl::::res://Scripts/cutscenecontroller.gd<>uid://bftda3tks5ujq::::res://Sprites/Tileset.png<>uid://dw3lxbunbvad7::::res://Scenes/NarratorUI.tscn
+enemy_paper_thrower.tscn::PackedScene::1626970181676589747::1770258696::0::1::::<><><>0<>0<><>::uid://cqmx6dpnvrfru::::res://Scripts/enemy_paper_thrower.gd<>uid://d2nchx61sj74g::::res://Sprites/Walking_Enemy.png<>uid://ceclcogcs66n1::::res://Scenes/paper_wad.tscn
 main.tscn::PackedScene::1976802197625077662::1766371657::0::1::::<><><>0<>0<><>::uid://cuyocjqgibk5q::::res://Sprites/Screenshot 2025-11-15 132900.png<>uid://8bxajg8cn4vf::::res://Sprites/play_button.png<>uid://blrc0hn7kp4rr::::res://Scripts/play.gd<>uid://c75ndfddbeyvy::::res://Sprites/stop_sign.png<>uid://ccv4vxjowbx7c::::res://Scripts/exit.gd
+NarratorUI.tscn::PackedScene::8761928232422193886::1770300484::0::1::::<><><>0<>0<><>::uid://bbvooa4i6lmkp::::res://Scripts/NarratorUI.gd
 paper_wad.tscn::PackedScene::5058397700666600232::1767368617::0::1::::<><><>0<>0<><>::uid://dkyl8fxv6xio6::::res://Scripts/paper_wad.gd<>uid://ctksl7cwk8skh::::res://Sprites/paper.png
-player.tscn::PackedScene::625019904377777389::1767636521::0::1::::<><><>0<>0<><>::uid://d3ts7dv6mwt4p::::res://Scripts/player_basic.gd<>uid://blin75qw0tpgt::::res://Sprites/walking_janitor.png
-::res://Scripts/::1769796120
+player.tscn::PackedScene::625019904377777389::1770305346::0::1::::<><><>0<>0<><>::uid://d3ts7dv6mwt4p::::res://Scripts/player_basic.gd<>uid://blin75qw0tpgt::::res://Sprites/walking_janitor.png
+::res://Scripts/::1770659465
 cutscenecontroller2.gd::GDScript::440853273177463413::1769796120::0::1::::<>Node<><>0<>0<><>::
-cutscenecontroller.gd::GDScript::6559135535040864043::1769796012::0::1::::<>Node<><>0<>0<><>::
+cutscenecontroller.gd::GDScript::6559135535040864043::1770303789::0::1::::<>Node<><>0<>0<><>::
 enemy_paper_thrower.gd::GDScript::5922087430449632802::1767060050::0::1::::<>CharacterBody2D<><>0<>0<><>::
 exit.gd::GDScript::4958370504565607814::1766371547::0::1::::<>TextureButton<><>0<>0<><>::
+NarratorUI.gd::GDScript::2500836544384472219::1770303227::0::1::::<>CanvasLayer<><>0<>0<><>::
 paper_wad.gd::GDScript::7911422670820090659::1767369411::0::1::::<>Area2D<><>0<>0<><>::
 play.gd::GDScript::3193758853577457823::1767110706::0::1::::<>TextureButton<><>0<>0<><>::
-player_basic.gd::GDScript::9164923092982463685::1769796080::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sprites/::1769794545
+player_basic.gd::GDScript::9164923092982463685::1770659465::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Sprites/::1770304737
 cursor.png::CompressedTexture2D::3462428440717053669::1765398215::1765848237::1::::<><><>0<>0<>acaeef38fbf91cbdc0934a89e7b92b4f<>res://.godot/imported/cursor.png-97af3808e5ea1d52e364c821589a41df.ctex::
 firehouse.png::CompressedTexture2D::1869415791947679639::1765398215::1765848237::1::::<><><>0<>0<>98af57d3409ea45949f64ba473fb2026<>res://.godot/imported/firehouse.png-d6e811149b73dfc6ff910ff1d4c3898c.ctex::
+Idle_janitor.png::CompressedTexture2D::3329968950760447674::1770304670::1770304737::1::::<><><>0<>0<>d041aaaad1db36030a35162c597379e5<>res://.godot/imported/Idle_janitor.png-05613f75742d67abb7a71c6b50017afa.ctex::
 Invisible_Blocks.png::CompressedTexture2D::8548922811024999524::1767193710::1767193916::1::::<><><>0<>0<>5d101b81724d35df2334d656495f07f4<>res://.godot/imported/Invisible_Blocks.png-d429cb999f90824c7640d5278a964147.ctex::
 New Piskel.png::CompressedTexture2D::4065499216240373547::1769794476::1769794545::1::::<><><>0<>0<>4ad0664d301346c600013b84b8a66569<>res://.godot/imported/New Piskel.png-a1fae72dc62a1ea52e4aacf5f32efb0f.ctex::
 paper.png::CompressedTexture2D::6128187408503239691::1765398215::1765848237::1::::<><><>0<>0<>a320a3585c166d9f51ded881a0bcaff1<>res://.godot/imported/paper.png-a64a6d10ab5f79a80bb525132eacf513.ctex::
