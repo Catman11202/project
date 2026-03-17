@@ -1,9 +1,9 @@
+TileMap
 Sprite2D
 CanvasLayer
 Label
 Panel
 Node
-TileMap
 AnimationPlayer
 TextEdit
 CollisionShape2D

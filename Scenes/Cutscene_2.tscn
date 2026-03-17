@@ -42,8 +42,8 @@ script = ExtResource("4_7tp2m")
 
 [node name="NewPiskel" type="Sprite2D" parent="." unique_id=648556899]
 z_index = -1
-position = Vector2(454.99997, 101.99999)
-scale = Vector2(5, 5)
+position = Vector2(454.99994, 40)
+scale = Vector2(10, 10)
 texture = ExtResource("5_ibmey")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1505632827]

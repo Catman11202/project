@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://i508sny5khof"]
 
 [ext_resource type="Script" uid="uid://d3ts7dv6mwt4p" path="res://Scripts/player_basic.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://blin75qw0tpgt" path="res://Sprites/walking_janitor.png" id="1_v0iea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
 size = Vector2(9, 28)
@@ -24,7 +23,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(768, 320, 480, 1408)]
+"values": [Rect2(36, 2731, 150, 440)]
 }
 
 [sub_resource type="Animation" id="Animation_cvnsp"]
@@ -37,10 +36,10 @@ tracks/0/path = NodePath("Sprite2D:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 0.16666667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [Rect2(768, 320, 480, 1408), Rect2(768, 2368, 480, 1408), Rect2(768, 320, 480, 1408)]
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vgqql"]
@@ -54,7 +53,6 @@ _data = {
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_cvnsp")
-speed = null
 jump_force = null
 gravity = null
 
@@ -63,10 +61,10 @@ position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=706623691]
-scale = Vector2(0.02, 0.02)
-texture = ExtResource("1_v0iea")
+position = Vector2(0.49999988, 4.172325e-07)
+scale = Vector2(0.022916667, 0.019886363)
 region_enabled = true
-region_rect = Rect2(768, 320, 480, 1408)
+region_rect = Rect2(36, 2731, 150, 440)
 
 [node name="CatchArea" type="Area2D" parent="." unique_id=6749707 groups=["catch_area"]]
 collision_layer = 2
