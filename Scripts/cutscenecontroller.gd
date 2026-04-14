@@ -3,6 +3,7 @@ extends Node
 @onready var player = $"../Player"
 @onready var fade = $"../CanvasLayer/ColorRect"
 @onready var narrator = $"../CanvasLayer/NarratorUI"
+@onready var anim = $"Player/AnimatedSprite2D"
 
 @export var pause_during_narration := true
 
@@ -42,6 +43,7 @@ func start_cutscene():
 
 func start_walk():
 	walking = true
+	anim.play("Walk")
 
 
 func _process(delta):

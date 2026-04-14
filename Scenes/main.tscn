@@ -1,38 +1,55 @@
-[gd_scene load_steps=6 format=3 uid="uid://3ftv40oqomli"]
+[gd_scene format=3 uid="uid://3ftv40oqomli"]
 
-[ext_resource type="Texture2D" uid="uid://cuyocjqgibk5q" path="res://Sprites/Screenshot 2025-11-15 132900.png" id="1_jjgbg"]
-[ext_resource type="Texture2D" uid="uid://8bxajg8cn4vf" path="res://Sprites/play_button.png" id="2_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://bfxoo7d62bxi5" path="res://Sprites/new_titlescreen_buttons.png" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://blrc0hn7kp4rr" path="res://Scripts/play.gd" id="3_kry3j"]
-[ext_resource type="Texture2D" uid="uid://c75ndfddbeyvy" path="res://Sprites/stop_sign.png" id="4_21xkr"]
+[ext_resource type="Texture2D" uid="uid://cb7kanle48sco" path="res://Sprites/Background/sprite_0.png" id="4_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://8lruqv7f3hgq" path="res://Sprites/Background/sprite_1.png" id="5_hptm8"]
 [ext_resource type="Script" uid="uid://ccv4vxjowbx7c" path="res://Scripts/exit.gd" id="5_kry3j"]
+[ext_resource type="Texture2D" uid="uid://c5ctfj1h2exfd" path="res://Sprites/Background/sprite_2.png" id="6_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://b0h6pic2ltii3" path="res://Sprites/Background/sprite_3.png" id="7_6iyac"]
+[ext_resource type="Texture2D" uid="uid://dk236x6gc155x" path="res://Sprites/Background/sprite_4.png" id="8_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://bes7ccalgj6wj" path="res://Sprites/Background/sprite_5.png" id="9_jkdf5"]
 
-[node name="Main" type="Node2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_wsu2k"]
+animations = [{
+"frames": [{
+"duration": 0.55,
+"texture": ExtResource("4_ynf5e")
+}, {
+"duration": 0.55,
+"texture": ExtResource("5_hptm8")
+}, {
+"duration": 0.55,
+"texture": ExtResource("6_d1ilt")
+}, {
+"duration": 0.55,
+"texture": ExtResource("7_6iyac")
+}, {
+"duration": 0.55,
+"texture": ExtResource("8_fdnlq")
+}, {
+"duration": 0.55,
+"texture": ExtResource("9_jkdf5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Main" type="Node2D" unique_id=1152690959]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -294.0
-offset_top = -237.0
-offset_right = 346.0
-offset_bottom = 123.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_jjgbg")
-metadata/_edit_use_anchors_ = true
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=740700780]
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1424891276]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -142.00006
-offset_top = -73.00003
-offset_right = 1906.0
-offset_bottom = 1975.0
+offset_left = -247.99994
+offset_top = 98.0
+offset_right = 2316.9995
+offset_bottom = 733.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.2, 0.2)
@@ -40,19 +57,31 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
 
-[node name="TextureButton" type="TextureButton" parent="CanvasLayer/CenterContainer"]
-layout_mode = 2
-texture_normal = ExtResource("2_jjvhh")
-stretch_mode = 3
-script = ExtResource("3_kry3j")
+[node name="NewTitlescreenButtons" type="Sprite2D" parent="CanvasLayer" unique_id=1946419282]
+z_index = 1
+position = Vector2(963.5, 706.9)
+scale = Vector2(0.46899417, 0.34575197)
+texture = ExtResource("1_jjgbg")
 
-[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(4, 4)
-texture_normal = ExtResource("4_21xkr")
-stretch_mode = 0
+[node name="Exit" type="Button" parent="CanvasLayer" unique_id=1369360437]
+offset_left = 27.0
+offset_right = 205.0
+offset_bottom = 138.0
 script = ExtResource("5_kry3j")
 
-[connection signal="pressed" from="CanvasLayer/CenterContainer/TextureButton" to="CanvasLayer/CenterContainer/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/TextureButton" to="CanvasLayer/TextureButton" method="_on_pressed"]
+[node name="Play" type="Button" parent="CanvasLayer" unique_id=1870092428]
+offset_left = 704.0
+offset_top = 637.0
+offset_right = 1226.0
+offset_bottom = 765.0
+script = ExtResource("3_kry3j")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1831899167]
+position = Vector2(946, 545)
+scale = Vector2(3.8710938, 2.1582031)
+sprite_frames = SubResource("SpriteFrames_wsu2k")
+autoplay = "default"
+frame_progress = 0.061577316
+
+[connection signal="pressed" from="CanvasLayer/Exit" to="CanvasLayer/Exit" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]

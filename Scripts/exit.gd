@@ -1,5 +1,5 @@
-extends TextureButton
+extends Button
 
 
-func _on_pressed() -> void:
+func _on_pressed():
 	get_tree().quit()

@@ -8,7 +8,7 @@ var can_move: bool = true
 
 @onready var catch_area: Area2D = $CatchArea
 @onready var held_anchor: Node2D = $HeldItemAnchor
-#@onready var anim = $Sprite2D
+@onready var player_sprite = $AnimatedSprite2D
 
 var held_paper: Area2D = null
 var overlapping_paper: Area2D = null
@@ -93,10 +93,11 @@ func register_enemy_hit():
 		_trigger_next_cutscene()
 
 
-func _update_animation(direction):
-	# Handle flipping
-	if direction != 0:
-		$AnimatedSprite2D.flip_h = direction < 0
+func player_animations():
+		
+	if is_on_floor():
+		if abs(velocity.x) > 0:
+			player_sprite.play("Walk", 1.5)
 '''
 	# Air animations
 	if not is_on_floor():
@@ -105,10 +106,4 @@ func _update_animation(direction):
 		else:
 			anim.play("fall")
 		return
-
-	# Ground animations
-	if direction == 0:
-		anim.play("idle")
-	else:
-		anim.play("walk")
-'''
+'''	
