@@ -1,13 +1,13 @@
+Label
+TextEdit
+CanvasLayer
 AnimatedSprite2D
 AnimationPlayer
 Sprite2D
 Button
 TileMap
-CanvasLayer
-Label
 Panel
 Node
-TextEdit
 CollisionShape2D
 Area2D
 ColorRect

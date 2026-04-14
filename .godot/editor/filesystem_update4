@@ -1,4 +1,2 @@
-res://Scripts/player_basic.gd
+res://Levels/level_02_gf_house.tscn
 res://Scenes/player.tscn
-res://Scripts/animation_controller.gd
-res://Scripts/cutscenecontroller.gd
