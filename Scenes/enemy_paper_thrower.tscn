@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://xgd7xetk8wj8"]
 
 [ext_resource type="Script" uid="uid://cqmx6dpnvrfru" path="res://Scripts/enemy_paper_thrower.gd" id="1_7jtrc"]
-[ext_resource type="Texture2D" uid="uid://d2nchx61sj74g" path="res://Sprites/Walking_Enemy.png" id="2_h45vj"]
 [ext_resource type="PackedScene" uid="uid://ceclcogcs66n1" path="res://Scenes/paper_wad.tscn" id="2_ivq5u"]
+[ext_resource type="Texture2D" uid="uid://bmpyjjf4t5ai5" path="res://Sprites/firefighter.png" id="3_h45vj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h45vj"]
 size = Vector2(11, 37)
@@ -14,11 +14,11 @@ script = ExtResource("1_7jtrc")
 paper_scene = ExtResource("2_ivq5u")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=864551270]
-scale = Vector2(0.025, 0.025)
-texture = ExtResource("2_h45vj")
+scale = Vector2(0.019, 0.019)
+texture = ExtResource("3_h45vj")
 flip_h = true
 region_enabled = true
-region_rect = Rect2(736, 256, 512, 1472)
+region_rect = Rect2(704, 0, 640, 2016)
 
 [node name="ThrowPoint" type="Marker2D" parent="." unique_id=1125260158]
 position = Vector2(-11, 5)
