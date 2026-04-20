@@ -5924,6 +5924,7 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_o45xt")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=245977941]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=312582567]
 modulate = Color(0.06666667, 0.06666667, 0.06666667, 1)

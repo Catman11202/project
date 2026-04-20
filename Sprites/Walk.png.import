@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8afqbbek3geo"
-path="res://.godot/imported/sprite-max-px-36.png-d2eda86b1d50d626abac1e2e9b856ca7.ctex"
+uid="uid://qeas8jbdw6o"
+path="res://.godot/imported/Walk.png-691c086a86990fa38dc7d9bc13281249.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/sprite-max-px-36.png"
-dest_files=["res://.godot/imported/sprite-max-px-36.png-d2eda86b1d50d626abac1e2e9b856ca7.ctex"]
+source_file="res://Sprites/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-691c086a86990fa38dc7d9bc13281249.ctex"]
 
 [params]
 

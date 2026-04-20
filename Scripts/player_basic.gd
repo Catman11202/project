@@ -93,17 +93,17 @@ func register_enemy_hit():
 		_trigger_next_cutscene()
 
 
-func player_animations():
-		
-	if is_on_floor():
-		if abs(velocity.x) > 0:
-			player_sprite.play("Walk", 1.5)
-'''
-	# Air animations
-	if not is_on_floor():
-		if velocity.y < 0:
-			anim.play("jump")
-		else:
-			anim.play("fall")
-		return
-'''	
+func force_idle():
+	velocity.x = 0
+	$AnimatedSprite2D.play("Idle")
+
+func _process(_delta):
+	# Play 'walk' if moving, otherwise 'idle'
+	if velocity.x > 0:
+		$AnimatedSprite2D.play("Walk")
+		$AnimatedSprite2D.flip_h = false  # Face right
+	elif velocity.x < 0:
+		$AnimatedSprite2D.play("Walk")
+		$AnimatedSprite2D.flip_h = true   # Face left
+	if velocity.x == 0:
+		$AnimatedSprite2D.play("Idle")

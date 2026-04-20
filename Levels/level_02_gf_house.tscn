@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://i508sny5khof" path="res://Scenes/player.tscn" id="1_g4o8i"]
 [ext_resource type="Texture2D" uid="uid://b1nfpiqq0fa41" path="res://Sprites/tiles_exterior.png" id="2_1h28h"]
-[ext_resource type="FontFile" uid="uid://cday2hdm34j32" path="res://ALGER.TTF" id="3_11ps8"]
+[ext_resource type="FontFile" uid="uid://clb0qr588ph0d" path="res://Silkscreen-Regular.ttf" id="3_11ps8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_11ps8"]
 texture = ExtResource("2_1h28h")
@@ -29,7 +29,7 @@ sources/0 = SubResource("TileSetAtlasSource_11ps8")
 
 [sub_resource type="LabelSettings" id="LabelSettings_omtda"]
 font = ExtResource("3_11ps8")
-font_size = 300
+font_size = 236
 
 [node name="Level02GfHouse" type="Node2D" unique_id=699819809]
 

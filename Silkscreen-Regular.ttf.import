@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cday2hdm34j32"
-path="res://.godot/imported/ALGER.TTF-f22739c62555397583dd96b4e9736faa.fontdata"
+uid="uid://clb0qr588ph0d"
+path="res://.godot/imported/Silkscreen-Regular.ttf-7d4ce4c524cbef72da6c7df94febda6d.fontdata"
 
 [deps]
 
-source_file="res://ALGER.TTF"
-dest_files=["res://.godot/imported/ALGER.TTF-f22739c62555397583dd96b4e9736faa.fontdata"]
+source_file="res://Silkscreen-Regular.ttf"
+dest_files=["res://.godot/imported/Silkscreen-Regular.ttf-7d4ce4c524cbef72da6c7df94febda6d.fontdata"]
 
 [params]
 

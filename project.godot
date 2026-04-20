@@ -26,6 +26,7 @@ window/size/borderless=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bplhxqjo2pt06"
+mouse_cursor/custom_image_hotspot=Vector2(32, 32)
 
 [input]
 

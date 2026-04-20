@@ -70,6 +70,7 @@ func load_level():
 func play_narration(text: String):
 	if pause_during_narration:
 		walking = false
+		player.force_idle()
 
 	narrator.play_text(text)
 	await narrator.narration_finished
