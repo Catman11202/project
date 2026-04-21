@@ -1,8 +1,10 @@
-res://Levels/level_01_janitors_escape.tscn::daca75218e446daf0185dd1f973bcf31::1767302930::res://.godot/exported/133200997/export-d023f877ac24d5ba1e9f99dabb0ca1e6-level_01_janitors_escape.scn
-res://Scenes/Cutscene_FirehouseIntro.tscn::942546fe2bb776dfc433daf44cd7be8e::1769795008::res://.godot/exported/133200997/export-990ebfb4463766fbddb6ccf5537cc0e6-Cutscene_FirehouseIntro.scn
-res://Scenes/enemy_paper_thrower.tscn::ff59d48f8ca1430c4a2bda8fbb527000::1767368640::res://.godot/exported/133200997/export-c0518a4e60b6d5ceb932ec99b4c2ce1f-enemy_paper_thrower.scn
-res://Scenes/main.tscn::b4aa029c6dcb7ba8456b765e63278ecb::1766371657::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
+res://Levels/level_01_janitors_escape.tscn::cb4d065e3ef6a501f8b2dce0a9631ef1::1774978903::res://.godot/exported/133200997/export-d023f877ac24d5ba1e9f99dabb0ca1e6-level_01_janitors_escape.scn
+res://Scenes/Cutscene_FirehouseIntro.tscn::254e26155b69800ffd3ab0d2e24265c9::1776343371::res://.godot/exported/133200997/export-990ebfb4463766fbddb6ccf5537cc0e6-Cutscene_FirehouseIntro.scn
+res://Scenes/enemy_paper_thrower.tscn::471f8d0ab6ccb5e581663564c3a1e581::1776630824::res://.godot/exported/133200997/export-c0518a4e60b6d5ceb932ec99b4c2ce1f-enemy_paper_thrower.scn
+res://Scenes/main.tscn::b3e372ae519ab95c0d8ab3a4f6b703ed::1774978819::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
 res://Scenes/paper_wad.tscn::1bc7f5ef4a9ff31a8c9472bd8b07fe45::1767368617::res://.godot/exported/133200997/export-36a55ee72b4b4369497887716a932adb-paper_wad.scn
-res://Scenes/player.tscn::46c4085206cc3275655566a61a89c8fa::1767636521::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
-res://Levels/level_02_gf_house.tscn::44d73e530ab8bee4fdad4684e7bb3fac::1769961058::res://.godot/exported/133200997/export-80ae885fbf48ebefb089617c46c66aec-level_02_gf_house.scn
-res://Scenes/Cutscene_2.tscn::711953c12edd50ce4425017c37736e8e::1769961062::res://.godot/exported/133200997/export-ba4310c8fec7960d55283ebd25676e2c-Cutscene_2.scn
+res://Scenes/player.tscn::0e8e4ff8aefe458c59eb544ab3322191::1776630824::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Levels/level_02_gf_house.tscn::078ed1ed3c07021202cc6fe6bd9df965::1776445950::res://.godot/exported/133200997/export-80ae885fbf48ebefb089617c46c66aec-level_02_gf_house.scn
+res://Scenes/Cutscene_2.tscn::0cfb0d37772fe47f17a3c79ff9f94c78::1772130497::res://.godot/exported/133200997/export-ba4310c8fec7960d55283ebd25676e2c-Cutscene_2.scn
+res://Scenes/NarratorUI.tscn::bde32c5bb703eea0e6ea86308796e720::1770300484::res://.godot/exported/133200997/export-50a8b79b563eb647f38550e096652947-NarratorUI.scn
+res://Scenes/zombie.tscn::e2fce2bfb6718b1c741ab0d263414a9a::1772399216::res://.godot/exported/133200997/export-2e55d1d349d545e5d2e7727595ee88ec-zombie.scn

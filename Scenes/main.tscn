@@ -76,12 +76,19 @@ offset_right = 1226.0
 offset_bottom = 765.0
 script = ExtResource("3_kry3j")
 
+[node name="Options" type="Button" parent="CanvasLayer" unique_id=1889769301]
+offset_left = 513.0
+offset_top = 794.0
+offset_right = 1415.0
+offset_bottom = 918.0
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1831899167]
 position = Vector2(946, 545)
 scale = Vector2(3.8710938, 2.1582031)
 sprite_frames = SubResource("SpriteFrames_wsu2k")
 autoplay = "default"
-frame_progress = 0.061577316
+frame = 3
+frame_progress = 0.46407396
 
 [connection signal="pressed" from="CanvasLayer/Exit" to="CanvasLayer/Exit" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]

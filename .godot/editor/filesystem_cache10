@@ -1,11 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776702014
-export_presets.cfg::TextFile::-1::1770902869::0::1::::<><><>0<>0<><>::
+::res://::1776790872
+export_presets.cfg::TextFile::-1::1776787824::0::1::::<><><>0<>0<><>::
 Silkscreen-Regular.ttf::FontFile::5548530463465409561::1776345854::1776345903::1::::<><><>0<>0<>cd58d4f5dfc2a2bc61c8e25d1a9dcf42<>res://.godot/imported/Silkscreen-Regular.ttf-7d4ce4c524cbef72da6c7df94febda6d.fontdata::
 ::res://dialogue/::1766328263
-::res://Levels/::1776445950
-level_01_janitors_escape.tscn::PackedScene::7759939049898402579::1774978903::0::1::::<><><>0<>0<><>::uid://bhgyh5j37tv8o::::res://Sprites/tiles_interior.png<>uid://dt2frlgvrsd2c::::res://Sprites/Invisible_Blocks.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://xgd7xetk8wj8::::res://Scenes/enemy_paper_thrower.tscn
-level_02_gf_house.tscn::PackedScene::853252933919403354::1776445950::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://clb0qr588ph0d::::res://Silkscreen-Regular.ttf
+::res://Levels/::1776790485
+level_01_janitors_escape.tscn::PackedScene::7759939049898402579::1776788077::0::1::::<><><>0<>0<><>::uid://bhgyh5j37tv8o::::res://Sprites/tiles_interior.png<>uid://dt2frlgvrsd2c::::res://Sprites/Invisible_Blocks.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://xgd7xetk8wj8::::res://Scenes/enemy_paper_thrower.tscn
+level_02_gf_house.tscn::PackedScene::853252933919403354::1776790485::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://clb0qr588ph0d::::res://Silkscreen-Regular.ttf
 ::res://Scenes/::1776630824
 Cutscene_2.tscn::PackedScene::6599114186327040737::1772130497::0::1::::<><><>0<>0<><>::uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://gjs13c3116h2::::res://Scripts/cutscenecontroller2.gd<>uid://bx6mgb5u723gx::::res://Sprites/New Piskel.png
 Cutscene_FirehouseIntro.tscn::PackedScene::3008921738136178335::1776343371::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://c0pkaetwpy8wl::::res://Scripts/cutscenecontroller.gd<>uid://bftda3tks5ujq::::res://Sprites/Tileset.png<>uid://dw3lxbunbvad7::::res://Scenes/NarratorUI.tscn
