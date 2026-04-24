@@ -1,14 +1,34 @@
 [gd_scene format=3 uid="uid://3ftv40oqomli"]
 
 [ext_resource type="Texture2D" uid="uid://bfxoo7d62bxi5" path="res://Sprites/new_titlescreen_buttons.png" id="1_jjgbg"]
-[ext_resource type="Script" uid="uid://blrc0hn7kp4rr" path="res://Scripts/play.gd" id="3_kry3j"]
 [ext_resource type="Texture2D" uid="uid://cb7kanle48sco" path="res://Sprites/Background/sprite_0.png" id="4_ynf5e"]
 [ext_resource type="Texture2D" uid="uid://8lruqv7f3hgq" path="res://Sprites/Background/sprite_1.png" id="5_hptm8"]
-[ext_resource type="Script" uid="uid://ccv4vxjowbx7c" path="res://Scripts/exit.gd" id="5_kry3j"]
 [ext_resource type="Texture2D" uid="uid://c5ctfj1h2exfd" path="res://Sprites/Background/sprite_2.png" id="6_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://b0h6pic2ltii3" path="res://Sprites/Background/sprite_3.png" id="7_6iyac"]
 [ext_resource type="Texture2D" uid="uid://dk236x6gc155x" path="res://Sprites/Background/sprite_4.png" id="8_fdnlq"]
 [ext_resource type="Texture2D" uid="uid://bes7ccalgj6wj" path="res://Sprites/Background/sprite_5.png" id="9_jkdf5"]
+
+[sub_resource type="GDScript" id="GDScript_6bp64"]
+script/source = "extends Button
+
+
+func _on_pressed():
+	get_tree().quit()
+"
+
+[sub_resource type="GDScript" id="GDScript_344ge"]
+script/source = "extends Button
+
+func _on_pressed():
+	get_tree().change_scene_to_file(\"res://Scenes/Cutscene_FirehouseIntro.tscn\")
+"
+
+[sub_resource type="GDScript" id="GDScript_ynf5e"]
+script/source = "extends Button
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Scenes/Options.tscn\")
+"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wsu2k"]
 animations = [{
@@ -38,53 +58,37 @@ animations = [{
 
 [node name="Main" type="Node2D" unique_id=1152690959]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=740700780]
-
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1424891276]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -247.99994
-offset_top = 98.0
-offset_right = 2316.9995
-offset_bottom = 733.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.2, 0.2)
-size_flags_horizontal = 3
-size_flags_vertical = 3
-mouse_filter = 2
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2071111190]
 
 [node name="NewTitlescreenButtons" type="Sprite2D" parent="CanvasLayer" unique_id=1946419282]
 z_index = 1
-position = Vector2(963.5, 706.9)
-scale = Vector2(0.46899417, 0.34575197)
+position = Vector2(1050.5001, 629.4)
+scale = Vector2(0.5109864, 0.30595705)
 texture = ExtResource("1_jjgbg")
 
 [node name="Exit" type="Button" parent="CanvasLayer" unique_id=1369360437]
-offset_left = 27.0
-offset_right = 205.0
-offset_bottom = 138.0
-script = ExtResource("5_kry3j")
+offset_left = 29.0
+offset_right = 225.0
+offset_bottom = 130.0
+script = SubResource("GDScript_6bp64")
 
 [node name="Play" type="Button" parent="CanvasLayer" unique_id=1870092428]
-offset_left = 704.0
-offset_top = 637.0
-offset_right = 1226.0
-offset_bottom = 765.0
-script = ExtResource("3_kry3j")
+offset_left = 775.0
+offset_top = 555.0
+offset_right = 1333.0
+offset_bottom = 683.0
+script = SubResource("GDScript_344ge")
 
 [node name="Options" type="Button" parent="CanvasLayer" unique_id=1889769301]
-offset_left = 513.0
-offset_top = 794.0
-offset_right = 1415.0
-offset_bottom = 918.0
+offset_left = 556.0
+offset_top = 702.0
+offset_right = 1551.0
+offset_bottom = 826.0
+script = SubResource("GDScript_ynf5e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1831899167]
-position = Vector2(946, 545)
-scale = Vector2(3.8710938, 2.1582031)
+position = Vector2(956.49994, 545.75)
+scale = Vector2(3.9121091, 2.1611328)
 sprite_frames = SubResource("SpriteFrames_wsu2k")
 autoplay = "default"
 frame = 3
@@ -92,3 +96,4 @@ frame_progress = 0.46407396
 
 [connection signal="pressed" from="CanvasLayer/Exit" to="CanvasLayer/Exit" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="CanvasLayer/Play" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Options" to="CanvasLayer/Options" method="_on_pressed"]

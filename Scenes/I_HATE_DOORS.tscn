@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://oglbw3culcpe"]
+
+[ext_resource type="Script" uid="uid://ddcj02t8ol8fb" path="res://Scenes/i_hate_doors.gd" id="1_vm1vv"]
+[ext_resource type="Texture2D" uid="uid://bcg8lt43h64ot" path="res://Sprites/Door.png" id="2_uc6qh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ly0ed"]
+size = Vector2(20, 44)
+
+[node name="IHateDoors" type="Area2D" unique_id=1605816190]
+script = ExtResource("1_vm1vv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966617760]
+position = Vector2(0, 12)
+shape = SubResource("RectangleShape2D_ly0ed")
+
+[node name="Door" type="Sprite2D" parent="." unique_id=573205023]
+position = Vector2(-1, 8)
+scale = Vector2(9, 9)
+texture = ExtResource("2_uc6qh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
