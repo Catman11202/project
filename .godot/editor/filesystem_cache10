@@ -1,24 +1,27 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777048741
+::res://::1777306904
 export_presets.cfg::TextFile::-1::1776787824::0::1::::<><><>0<>0<><>::
+game_bgm.mp3::AudioStreamMP3::8554022882394519644::1777049675::1777049690::1::::<><><>0<>0<>64a75c3033ec511e80de9e1609b41ad7<>res://.godot/imported/game_bgm.mp3-f9ed96db3712d6e4c0dc3a2c3177b189.mp3str::
 Silkscreen-Regular.ttf::FontFile::5548530463465409561::1776345854::1776345903::1::::<><><>0<>0<>cd58d4f5dfc2a2bc61c8e25d1a9dcf42<>res://.godot/imported/Silkscreen-Regular.ttf-7d4ce4c524cbef72da6c7df94febda6d.fontdata::
 ::res://dialogue/::1766328263
-::res://Levels/::1777042237
-level_01_janitors_escape.tscn::PackedScene::7759939049898402579::1777042237::0::1::::<><><>0<>0<><>::uid://bhgyh5j37tv8o::::res://Sprites/tiles_interior.png<>uid://dt2frlgvrsd2c::::res://Sprites/Invisible_Blocks.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://xgd7xetk8wj8::::res://Scenes/enemy_paper_thrower.tscn<>uid://n6oxmiu3t3cp::::res://Sprites/Exit.png
+::res://Levels/::1777291418
+level_01_janitors_escape.tscn::PackedScene::7759939049898402579::1777291418::0::1::::<><><>0<>0<><>::uid://bhgyh5j37tv8o::::res://Sprites/tiles_interior.png<>uid://dt2frlgvrsd2c::::res://Sprites/Invisible_Blocks.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://n6oxmiu3t3cp::::res://Sprites/Exit.png
 level_02_gf_house.tscn::PackedScene::853252933919403354::1776790485::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://clb0qr588ph0d::::res://Silkscreen-Regular.ttf
-::res://Scenes/::1777042151
+::res://Scenes/::1777306344
+AudioMananger.tscn::PackedScene::1010659107508433065::1777306287::0::1::::<><><>0<>0<><>::uid://dt4vrihvtk0ma::::res://game_bgm.mp3<>uid://7g4ttjjjekms::::res://Scripts/audio_mananger.gd
 Cutscene_2.tscn::PackedScene::6599114186327040737::1772130497::0::1::::<><><>0<>0<><>::uid://b1nfpiqq0fa41::::res://Sprites/tiles_exterior.png<>uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://gjs13c3116h2::::res://Scripts/cutscenecontroller2.gd<>uid://bx6mgb5u723gx::::res://Sprites/New Piskel.png
-Cutscene_FirehouseIntro.tscn::PackedScene::3008921738136178335::1777038971::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://c0pkaetwpy8wl::::res://Scripts/cutscenecontroller.gd<>uid://bftda3tks5ujq::::res://Sprites/Tileset.png<>uid://dw3lxbunbvad7::::res://Scenes/NarratorUI.tscn
+Cutscene_FirehouseIntro.tscn::PackedScene::3008921738136178335::1777050106::0::1::::<><><>0<>0<><>::uid://i508sny5khof::::res://Scenes/player.tscn<>uid://1vtaf0jln0b0::::res://Sprites/firehouse.png<>uid://c0pkaetwpy8wl::::res://Scripts/cutscenecontroller.gd<>uid://bftda3tks5ujq::::res://Sprites/Tileset.png<>uid://dw3lxbunbvad7::::res://Scenes/NarratorUI.tscn<>uid://b42kuofqffoyl::::res://Sprites/outside_bg.png
 enemy_paper_thrower.tscn::PackedScene::1626970181676589747::1776630824::0::1::::<><><>0<>0<><>::uid://cqmx6dpnvrfru::::res://Scripts/enemy_paper_thrower.gd<>uid://ceclcogcs66n1::::res://Scenes/paper_wad.tscn<>uid://bmpyjjf4t5ai5::::res://Sprites/firefighter.png
 i_hate_doors.gd::GDScript::7374549884284326599::1777036886::0::1::::<>Area2D<><>0<>0<><>::
 I_HATE_DOORS.tscn::PackedScene::995700949057407586::1777036886::0::1::::<><><>0<>0<><>::uid://ddcj02t8ol8fb::::res://Scenes/i_hate_doors.gd<>uid://bcg8lt43h64ot::::res://Sprites/Door.png
 main.tscn::PackedScene::1976802197625077662::1776953930::0::1::::<><><>0<>0<><>::uid://bfxoo7d62bxi5::::res://Sprites/new_titlescreen_buttons.png<>uid://cb7kanle48sco::::res://Sprites/Background/sprite_0.png<>uid://8lruqv7f3hgq::::res://Sprites/Background/sprite_1.png<>uid://c5ctfj1h2exfd::::res://Sprites/Background/sprite_2.png<>uid://b0h6pic2ltii3::::res://Sprites/Background/sprite_3.png<>uid://dk236x6gc155x::::res://Sprites/Background/sprite_4.png<>uid://bes7ccalgj6wj::::res://Sprites/Background/sprite_5.png
-NarratorUI.tscn::PackedScene::8761928232422193886::1777042151::0::1::::<><><>0<>0<><>::uid://bbvooa4i6lmkp::::res://Scripts/NarratorUI.gd<>uid://clb0qr588ph0d::::res://Silkscreen-Regular.ttf
-Options.tscn::PackedScene::5069298020209031441::1776953801::0::1::::<><><>0<>0<><>::uid://c6tykexoi0dtu::::res://Scripts/button.gd
+NarratorUI.tscn::PackedScene::8761928232422193886::1777050019::0::1::::<><><>0<>0<><>::uid://bbvooa4i6lmkp::::res://Scripts/NarratorUI.gd<>uid://clb0qr588ph0d::::res://Silkscreen-Regular.ttf
+Options.tscn::PackedScene::5069298020209031441::1777306344::0::1::::<><><>0<>0<><>::uid://c6tykexoi0dtu::::res://Scripts/button.gd
 paper_wad.tscn::PackedScene::5058397700666600232::1767368617::0::1::::<><><>0<>0<><>::uid://dkyl8fxv6xio6::::res://Scripts/paper_wad.gd<>uid://ctksl7cwk8skh::::res://Sprites/paper.png
 player.tscn::PackedScene::625019904377777389::1777037557::0::1::::<><><>0<>0<><>::uid://d3ts7dv6mwt4p::::res://Scripts/player_basic.gd<>uid://crww5ltmhm03k::::res://Sprites/Idle.png<>uid://qeas8jbdw6o::::res://Sprites/Walk.png
 zombie.tscn::PackedScene::7802431575569754038::1772399216::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1777042193
+::res://Scripts/::1777306287
+audio_mananger.gd::GDScript::2260224998083822946::1777306287::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
 button.gd::GDScript::6989394009529461358::1776953373::0::1::::<>Button<><>0<>0<><>::
 cutscenecontroller2.gd::GDScript::440853273177463413::1769796120::0::1::::<>Node<><>0<>0<><>::
 cutscenecontroller.gd::GDScript::6559135535040864043::1776631096::0::1::::<>Node<><>0<>0<><>::
@@ -30,9 +33,10 @@ paper_wad.gd::GDScript::7911422670820090659::1767369411::0::1::::<>Area2D<><>0<>
 play.gd::GDScript::3193758853577457823::1774373531::0::1::::<>Button<><>0<>0<><>::
 player_basic.gd::GDScript::9164923092982463685::1777036431::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Settings.gd::GDScript::179100194454518478::1776951095::0::1::::<>Button<><>0<>0<><>::
-::res://Sprites/::1777034698
+::res://Sprites/::1777291274
 cursor.png::CompressedTexture2D::3462428440717053669::1776428431::1776428766::1::::<><><>0<>0<>acaeef38fbf91cbdc0934a89e7b92b4f<>res://.godot/imported/cursor.png-97af3808e5ea1d52e364c821589a41df.ctex::
 Door.png::CompressedTexture2D::2541208986013551115::1777034678::1777034698::1::::<><><>0<>0<>9ee5a528a8daf404ee5313f025722d9a<>res://.godot/imported/Door.png-c55366d45e28797e373179b2526bc38b.ctex::
+download.jpg::CompressedTexture2D::1612714845703054726::1777291273::1777291274::1::::<><><>0<>0<>904702cf6e87af818deecca27268a4db<>res://.godot/imported/download.jpg-0482606a760d6118209d6b3222e82c2b.ctex::
 Exit.png::CompressedTexture2D::977342432414359323::1777033347::1777033420::1::::<><><>0<>0<>3b3da7313a8a56b73c58a9fb526e5bcf<>res://.godot/imported/Exit.png-5b73b733fab02932c087f79561a44729.ctex::
 firefighter.png::CompressedTexture2D::3261126235410295982::1775163435::1776267903::1::::<><><>0<>0<>7b3019262ce6adf39dc70087db57a5bb<>res://.godot/imported/firefighter.png-24480f698f76613923f785e9411ca64f.ctex::
 firehouse.png::CompressedTexture2D::1869415791947679639::1765398215::1765848237::1::::<><><>0<>0<>98af57d3409ea45949f64ba473fb2026<>res://.godot/imported/firehouse.png-d6e811149b73dfc6ff910ff1d4c3898c.ctex::
@@ -40,6 +44,7 @@ Idle.png::CompressedTexture2D::6012857975143293238::1776629735::1776629845::1:::
 Invisible_Blocks.png::CompressedTexture2D::8548922811024999524::1767193710::1767193916::1::::<><><>0<>0<>5d101b81724d35df2334d656495f07f4<>res://.godot/imported/Invisible_Blocks.png-d429cb999f90824c7640d5278a964147.ctex::
 New Piskel.png::CompressedTexture2D::4065499216240373547::1769794476::1769794545::1::::<><><>0<>0<>4ad0664d301346c600013b84b8a66569<>res://.godot/imported/New Piskel.png-a1fae72dc62a1ea52e4aacf5f32efb0f.ctex::
 new_titlescreen_buttons.png::CompressedTexture2D::2785722316066300130::1776098329::1776098404::1::::<><><>0<>0<>1fb8f41589d2368a4e71af6e3aeb32b9<>res://.godot/imported/new_titlescreen_buttons.png-e6a4a619a500d6471475577ba3cb4793.ctex::
+outside_bg.png::CompressedTexture2D::4478278978146202795::1777049985::1777049997::1::::<><><>0<>0<>c6bd9be8682f2ea1436a01e2b2cfe758<>res://.godot/imported/outside_bg.png-dad130b88b15bfa6b9cc61d64eed69e5.ctex::
 paper.png::CompressedTexture2D::6128187408503239691::1765398215::1765848237::1::::<><><>0<>0<>a320a3585c166d9f51ded881a0bcaff1<>res://.godot/imported/paper.png-a64a6d10ab5f79a80bb525132eacf513.ctex::
 player.png::CompressedTexture2D::8521721784171135255::1773324604::1774372220::1::::<><><>0<>0<>ae1c6a4ac4c976d3a2b42a5651c758a2<>res://.godot/imported/player.png-b12d81cacd41edd115dbd315254b5ad9.ctex::
 Screenshot 2025-11-15 132900.png::CompressedTexture2D::6227017413441201788::1765398215::1765848237::1::::<><><>0<>0<>b95618f0e4d9926367526e595f7da0dd<>res://.godot/imported/Screenshot 2025-11-15 132900.png-d70978e4beebde32ca4884fe3b644e4f.ctex::

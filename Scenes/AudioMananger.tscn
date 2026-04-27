@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ontn4p2knvuf"]
+
+[ext_resource type="AudioStream" uid="uid://dt4vrihvtk0ma" path="res://game_bgm.mp3" id="1_he002"]
+[ext_resource type="Script" uid="uid://7g4ttjjjekms" path="res://Scripts/audio_mananger.gd" id="2_1b6em"]
+
+[node name="AudioMananger" type="AudioStreamPlayer" unique_id=1215841449]
+stream = ExtResource("1_he002")
+autoplay = true
+script = ExtResource("2_1b6em")

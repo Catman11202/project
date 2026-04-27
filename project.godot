@@ -18,6 +18,10 @@ config/name="Deadrise"
 run/main_scene="uid://3ftv40oqomli"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+AudioMananger="*uid://ontn4p2knvuf"
+
 [display]
 
 window/size/viewport_width=1920
@@ -28,7 +32,6 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/per_pixel_transparency/allowed=true
 mouse_cursor/custom_image="uid://bplhxqjo2pt06"
-mouse_cursor/custom_image_hotspot=Vector2(32, 32)
 
 [input]
 
